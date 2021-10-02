@@ -1,0 +1,42 @@
+a{color:#3c3c3b}
+div{background:#ededed;color:#3c3c3b}
+h2,p{padding:8px 0}
+img{margin:8px 0}
+  
+.linedark{border-bottom:1px solid #3c3c3b}
+.linelight{border-bottom:1px solid #ededed}
+.info{padding:16px;border:1px solid #3c3c3b}
+.tdark, #list a:hover{background:#3c3c3b;color:#ededed}
+.fullimg{width:100%;height:auto;max-width:1052px;display:block;margin-left:auto;margin-right:auto}
+.halfimg{width:50%;margin-left:auto;margin-right:auto;display:block}
+.circle{width:10rem;height:10rem;display:flex;justify-content:center;align-items:center;border-radius:50%;border-width:1px;border-style:solid}
+.circle p{text-align:center}
+.bt{padding:10px 16px;background:#3c3c3b;color:#ededed;border:none;font-weight:800}
+
+#list{position:fixed;display:none;z-index:2;top:0;right:0;-webkit-animation-name:fade;animation-name:fade;-webkit-animation-duration:1s;animation-duration:1s}
+#list a{display:inline-block;padding:14px 16px;text-decoration:none}
+#menubt{position:fixed;padding:4px 16px;border:0;font-size:32px;font-weight:600;right:16px;bottom:24px;z-index:3}
+#presbg{width:100vw;height:600px;background-color:#ededed;background-image:url('img/jl-bg.png');background-size:cover;background-position:center}
+#prof{display:flex;flex-direction:column;justify-content:center;align-items:center}
+#prof img{width:240px}
+#gridimg{width:100%}
+#carousel{width:100%;display:grid;grid-template-columns:100%;margin:16px 0}
+#carousel img{width:100%;margin:0}
+
+@media (min-width:600px){
+.info{padding:24px}
+.halfimg{width:25%;display:inline-block}
+.cite{display:flex;align-items:center}
+.cite p{width:70%;margin-left:16px;display:inline-block}
+
+#prof img{margin:auto 16px}
+#carousel{grid-template-columns:50% 50%}
+#gridimg{width:50%}
+}
+@media (min-width:960px){
+.info{padding:24px 48px}
+
+#presbg{background-size:contain}
+#prof{flex-direction:row}
+#prof img{margin:auto 24px}
+}
