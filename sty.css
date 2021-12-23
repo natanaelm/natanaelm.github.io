@@ -1,8 +1,10 @@
 body{font-family:"Verdana",sans-serif;margin:0;padding:0}
 header{padding:48px 0;}
 h1,h2,h3,p{margin:0;padding:8px 16px}
-a{color:#00BD9F;text-decoration:none}
+a{color:#505;text-decoration:none}
 a:hover{text-decoration:underline}
+a:active{background-color:#505;color:#fff}
+a:visited{color:#FF0080}
 footer{padding:20px;text-align:center}
 
 @keyframes fade{
@@ -14,24 +16,23 @@ footer{padding:20px;text-align:center}
   to{opacity:1}
 }
 
-.mtext{text-align:center;font-size:1.1rem;color:#404040;}
+.mtext{text-align:center}
 .mtext p{padding:16px 32px}
-.qel{margin:8px;display:flex;box-shadow:2px 2px 4px #404040}
+.qel{margin:8px 12px;display:flex;box-shadow:2px 2px 4px #303}
 .qel img{width:150px;height:150px}
-.alk{margin:4px 16px;display:inline-block}
-.icon{width:48px;height:48px}
-.bk{background:#404040;color:#fff}
+.alk{padding:6px 16px;display:inline-block}
+.bk{background:#505;color:#fff}
 .dbox{margin:4px;padding:16px}
 
-#que{display:grid;grid-template-columns:100%}
+#que{display:grid;grid-template-columns:1fr}
 #soc{margin:0px 8px;display:grid;grid-template-columns:100%;grid-gap:2px}
 #soc a{display:inline-block;padding:12px;color:#fff;text-align:center}
 
 @media (min-width:600px){
-body > h2,body > p{margin:auto 16px}
+body > *{margin:auto 16px}
 
 #que{margin:8px 16px}
-#soc{margin:8px 24px;grid-template-columns:50% 50%}
+#soc{margin:8px 24px;grid-template-columns:1fr 1fr}
 }
 @media (min-width:1024px){
 body > h2,body > p{margin:auto 32px}
