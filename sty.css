@@ -41,4 +41,5 @@ body > h2,body > p{margin:auto 32px}
 #soc{margin:8px 32px;grid-template-columns:1fr 1fr 1fr}
 }
 @media (min-width:1440px){
+body > h2, body > p{margin: auto 64px}
 }
