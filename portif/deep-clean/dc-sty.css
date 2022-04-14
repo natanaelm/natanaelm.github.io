@@ -29,12 +29,12 @@ background-position:right center;
 background-repeat:no-repeat;
 }
 #sofa div{
-background-color:rgba(255,255,255,0.5);
+background-color:rgba(255,255,255,0.7);
 margin:32px 16px;padding:16px;
 display:inline-block;font-family:'Arima Madurai',cursive}
+#sofa h1, #sofa h3{display:inline-block;margin:6px 0}
 
-#sofa p{margin:0;padding:8px 12px}
-#sofa h1, #sofa h3{display:inline-block;margin:8px 0}
+#bar1{margin:0;padding:8px 12px}
 
 #pr1{padding-bottom:200px}
 #soc a{padding:12px;border:2px solid #7bceff;display:inline-block}
@@ -51,7 +51,7 @@ section{padding:16px 24px}
 .prod{grid-template-columns:repeat(3,1fr)}
 
 #sofa div{margin-left:32px}
-#sofa p{padding-left:24px}
+#bar1{padding-left:24px}
 }
 @media (min-width:800){
 section{padding:16px 32px}
@@ -62,7 +62,7 @@ section{padding:16px 32px}
 section{padding:16px 40px}
 .prod{margin:10px 40px;grid-template-columns:repeat(4,1fr);}
 #sofa div{margin-left:64px}
-#sofa p{padding-left:32px}
+#bar1{padding-left:32px}
 #pr1{padding-right:400px;padding-bottom:16px}
 }
 @media (min-width:1360px){
