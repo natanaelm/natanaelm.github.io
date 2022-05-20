@@ -34,7 +34,7 @@ margin:32px 16px;padding:16px;
 display:inline-block;font-family:'Arima Madurai',cursive}
 #sofa h1, #sofa h3{display:inline-block;margin:6px 0}
 
-#bar1{margin:0;padding:8px 12px;position:sticky}
+#bar1{margin:0;padding:8px 12px;position:-webkit-sticky}
 
 #pr1{padding-bottom:200px}
 #soc a{padding:12px;border:2px solid #7bceff;display:inline-block}
