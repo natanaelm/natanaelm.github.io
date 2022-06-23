@@ -4,7 +4,9 @@ user-select:none;-webkit-user-select:none;-moz-user-select:none;
 section{padding:8px 16px}
 a{text-decoration:none}
 a:hover{text-decoration:underline}
+figcaption{font-size: small;text-align: center;}
 footer{text-align:center;padding:20px}
+footer > span{display:block}
 
 .blb{background:#004AAD;color:#fff;}
 .skb{background:#7bceff;color:#fff}
@@ -14,12 +16,12 @@ footer{text-align:center;padding:20px}
 .htx{color:#404040;font-size:1.2em;}
 .ic{width:1.2rem;height:1.2rem;vertical-align:text-bottom}
 .btn{padding:12px 0}
-.mbtn{color:#fff;background-color:transparent;margin:0;padding:4px 8px;font-size:1rem;border:thin solid #004aad;border-radius:6px;display:inline-block}
+.mbtn{color:#fff;background-color:transparent;margin:0;padding:4px 8px;font-size:1rem;border:thin solid #004aad;border-radius:4px;display:inline-block;text-shadow:0 0 1px #004AAD;}
 .mbtn:active{background-color:#004aad}
 
 .prod{display:grid;grid-template-columns:1fr 1fr;grid-gap:16px;margin:16px;}
 .prod div{padding:16px;text-align:center;box-shadow:2px 4px 8px #c8c8c8}
-.prod img{width:100%;height:auto;background-color:#fff;display:block}
+.prod img{width:100%;height:auto;background-color:#fff;display:block;border-radius:6px;}
 .prod strong{color:#004AAD}
 
 #sofa{
@@ -32,14 +34,12 @@ background-repeat:no-repeat;
 background-color:rgba(255,255,255,0.7);
 margin:32px 16px;padding:16px;
 display:inline-block;font-family:'Arima Madurai',cursive}
-#sofa h1, #sofa h3{display:inline-block;margin:6px 0}
+#sofa *{display:inline-block;margin:6px 0}
 
 #bar1{margin:0;padding:8px 12px;position:sticky;top:0}
 
-#pr1{padding-bottom:200px}
-#soc a{padding:12px;border:2px solid #7bceff;display:inline-block}
-#soc a:hover{border-color:#004AAD}
-#soc a:active{background-color:#004AAD;color;#fff}
+#pr1{display:grid;grid-template-columns: 1fr;border-top: 2px solid #004AAD;border-bottom: 2px solid #7bceff;}
+#pr1 img{width: 100%;height: auto;display:inline-block}
 
 @media (max-width:300px){
 .prod{grid-template-columns:1fr}
@@ -60,13 +60,14 @@ section{padding:16px 32px}
 
 @media (min-width:960px){
 section{padding:16px 40px}
+footer > span{display:inline-block}
 .prod{margin:10px 40px;grid-template-columns:repeat(4,1fr);}
 #sofa div{margin-left:64px}
 #bar1{padding-left:32px}
-#pr1{padding-right:400px;padding-bottom:16px}
+#pr1{grid-template-columns: 1fr 1fr;}
 }
 @media (min-width:1360px){
 section{padding:20px 64px}
 .prod{margin:10px 80px;grid-template-columns:repeat(6,1fr)}
-#pr1{padding-right:800px}
+#pr1{grid-template-columns: 1fr 600px;}
 }
