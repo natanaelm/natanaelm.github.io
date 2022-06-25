@@ -1,2 +1,2 @@
 # Projeto de site
-um site e  portfolio onde mostro meus projetos.
+Site e Portfolio onde mostro meus projetos.
