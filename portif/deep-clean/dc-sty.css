@@ -1,47 +1,60 @@
 body{margin:0;padding:0;font-family:'Verdana','Arial',sans-serif;
 user-select:none;-webkit-user-select:none;-moz-user-select:none;
--ms-user-select:none}
+-ms-user-select:none;
+scroll-behavior: smooth;
+}
 section{padding:8px 16px}
 a{text-decoration:none}
 a:hover{text-decoration:underline}
+details{border-top: 1px solid #7bceff;padding:8px 0}
+summary{list-style:none;position:relative;cursor: pointer;}
+summary::after{content:"+";font-size: 2rem;color:#efefef;position:absolute;top:0;right: 0;transform-origin: center;transition:300ms linear}
+details[open] summary::after{transform: rotate(45deg);}
 figcaption{font-size: small;text-align: center;}
-footer{text-align:center;padding:20px}
-footer > span{display:block}
+footer{text-align:center;padding:20px;margin: 0;}
+footer > span{display:block;margin-bottom: 6px;}
 
-.blb{background:#004AAD;color:#fff;}
-.skb{background:#7bceff;color:#fff}
+.blb{background:#004AAD;color:#efefef;}
+.skb{background:#7bceff;color: #06283d;}
 .bl{color:#004AAD}
 .sk{color:#7bceff}
 
-.htx{color:#404040;font-size:1.2em;}
+.htx{color:#404040;font-size:1.2em;max-width: 800px;}
 .ic{width:1.2rem;height:1.2rem;vertical-align:text-bottom}
-.btn{padding:12px 0}
-.mbtn{color:#fff;background-color:transparent;margin:0;padding:4px 8px;font-size:1rem;border:thin solid #004aad;border-radius:4px;display:inline-block;text-shadow:0 0 1px #004AAD;}
-.mbtn:active{background-color:#004aad}
+.icb{width:2rem;height: 2rem;vertical-align: middle;}
+.btn{padding:8px 0}
+.mbtn{color:#efefef;background-color:transparent;margin:0;padding:4px 8px;font-size:1rem;border:thin solid #7bceff;border-radius:4px;display:inline-block;}
+.mbtn:active{background-color:#06283d}
 
 .prod{display:grid;grid-template-columns:1fr 1fr;grid-gap:16px;margin:16px;}
-.prod div{padding:16px;text-align:center;box-shadow:2px 4px 8px #c8c8c8}
-.prod img{width:100%;height:auto;background-color:#fff;display:block;border-radius:6px;}
+.prod div{padding:12px 20px;text-align:center;box-shadow:2px 4px 6px #b0b0b0}
+.prod img{width:100%;height:auto;background-color:#efefef;display:block;border-radius:6px;}
 .prod strong{color:#004AAD}
 
 #sofa{
-background-image:url('img/icon.png');
-background-size:contain;
-background-position:right center;
-background-repeat:no-repeat;
+  background-color: #06283d;
+background-image: url('icwt.png');
+background-size: contain;
+background-position: right center;
+background-repeat: no-repeat;
 }
 #sofa div{
-background-color:rgba(255,255,255,0.7);
+background-color:rgba(255,255,255,0.8);
 margin:32px 16px;padding:16px;
+border-radius: 16px;
 display:inline-block;font-family:'Arima Madurai',cursive}
-#sofa *{display:inline-block;margin:6px 0}
+#sofa *{display:inline-block;margin:5px 0}
 
-#bar1{margin:0;padding:8px 12px;position:sticky;top:0}
+#wbtn{background-color: #004AAD;padding: 8px;border: 2px solid #efefef;border-radius: 25%;position: fixed;bottom: 16px;right: 16px;z-index: 20;}
+#wbtn img{width:40px;height: 40px;}
+#wbtn:hover{border-color: #7bceff;}
+
+#wbtn:active{background-color: #06283d;}
 
 #pr1{display:grid;grid-template-columns: 1fr;border-top: 2px solid #004AAD;border-bottom: 2px solid #7bceff;}
 #pr1 img{width: 100%;height: auto;display:inline-block}
 
-@media (max-width:300px){
+@media (max-width:312px){
 .prod{grid-template-columns:1fr}
 }
 
@@ -50,8 +63,7 @@ section{padding:16px 24px}
 
 .prod{grid-template-columns:repeat(3,1fr)}
 
-#sofa div{margin-left:32px}
-#bar1{padding-left:24px}
+#sofa div{background-color: #efefef;margin-left:32px}
 }
 @media (min-width:800){
 section{padding:16px 32px}
@@ -63,11 +75,14 @@ section{padding:16px 40px}
 footer > span{display:inline-block}
 .prod{margin:10px 40px;grid-template-columns:repeat(4,1fr);}
 #sofa div{margin-left:64px}
-#bar1{padding-left:32px}
 #pr1{grid-template-columns: 1fr 1fr;}
 }
+
 @media (min-width:1360px){
-section{padding:20px 64px}
+section{padding:20px 96px}
 .prod{margin:10px 80px;grid-template-columns:repeat(6,1fr)}
-#pr1{grid-template-columns: 1fr 600px;}
+}
+@media (min-width:1600){
+  section{padding:20px 128px}
+  #sofa div{margin-left: 96px;}
 }
