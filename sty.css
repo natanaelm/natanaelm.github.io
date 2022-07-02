@@ -14,7 +14,7 @@ footer{padding:20px;text-align:center}
 .skils{padding:8px;margin:2px;color:#fff;background-color:#112b3c;display:inline-block}
 
 #ini{font-size:1.1rem}
-#hdr{background-image:url('img/protruding-squares.svg');background-position:center;background-size:cover}
+#hdr{background-image:url('img/protruding-squares.svg');background-position:center;background-size:contain}
 
 .mtext{text-align:center}
 .mtext p{padding:16px 32px}
