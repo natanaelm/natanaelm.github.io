@@ -4,7 +4,7 @@
   --light1:#5468bc;
   --light2: #8089ca;
   --light3: #a8abd8;
-  --light4: #cecec6;
+  --light4: #ceceda;
   --cyan1: #4f87b7;
   --cyan2: #264670;
   --cyan3: #000d2f;
@@ -203,10 +203,10 @@ footer > span{display:inline-block}
 #pr1{grid-template-columns: 1fr 600px;}
 }
 
-@media (min-width:1360px){
+@media (min-width:1280px){
 section{padding:20px 96px}
 
-.prod{margin:10px 80px;grid-template-columns:repeat(6,1fr)}
+.prod{margin:10px 64px;grid-template-columns:repeat(6,1fr)}
 
 #sofa{background-position: center 75%;}
 #sofa div{margin-left: 96px;}
