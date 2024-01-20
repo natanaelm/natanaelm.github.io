@@ -2,6 +2,7 @@
   --base: #004aad;
   --cyan: #7bceff;
   --wth: #eef;
+  --gray: #404040;
   --light1:#5468bc;
   --light2: #8089ca;
   --light3: #a8abd8;
@@ -12,6 +13,22 @@
   --dark: #13172c;
   --dark1: #04204d;
   --dark2: #16387f;
+}
+@media screen and (prefers-color-scheme: dark) {
+  :root{
+    --cyan: #4f87b7;
+    --wth: #04204d;
+    --gray: #7bceff;
+    --light3: #264670;
+    --dark1: #ceceda;
+  }
+  body{
+    background-color: #13172c;
+    color: #eef;
+  }
+  .bl{
+    color: #8089ca !important;
+  }
 }
 
 body{
@@ -56,7 +73,7 @@ footer{text-align:center;padding:14px;margin: 0;}
 footer > span{display:block;margin: 6px;}
 
 .blb{background:var(--base);color:#eee;}
-.dkb{background-image: linear-gradient(145deg, var(--dark), var(--dark2) );color: #eee;}
+.dkb{background-image: linear-gradient(120deg, var(--dark), var(--dark2) );color: #eee;}
 .ligth{background-color: var(--wth);color: var(--dark1);}
 .bl{color:var(--base)}
 .dk{color:var(--cyan2)}
@@ -64,7 +81,7 @@ footer > span{display:block;margin: 6px;}
 .ctr{
   text-align: center;
 }
-.htx{color:#404040;font-size:1.1em}
+.htx{color: var(--gray);font-size:1.1em}
 .ic{
   width: 1.2rem;height: 1.2rem;
   vertical-align: text-bottom}
@@ -126,7 +143,6 @@ footer > span{display:block;margin: 6px;}
   display: block;
 }
 .brands{
-  color: var(--cyan2);
   font-size: small;
 }
 .brands img{
@@ -180,7 +196,7 @@ footer > span{display:block;margin: 6px;}
   border-color: var(--dark2);
 }
 #topBtn{
-  margin:16px;padding: 8px 16px;
+  margin:16px;padding: 8px 12px;
   position: fixed;
   left: 0; bottom: 0;
   font-weight: bolder;
@@ -201,6 +217,7 @@ footer > span{display:block;margin: 6px;}
 }
 @media (max-width:320px){
   .prod{
+    margin: 0;
     grid-gap: 8px;
   }
 }
