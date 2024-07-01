@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <title>metronomo</title>
+  <style>
+body{
+  margin-block: 0;padding: 8px;
+  background-color: #222;color: #f2f2f2;
+  font: 1em sans-serif;
+}
+button{
+  background-color: #eee;
+  color: #111;
+  border: none;
+}
+button:active{
+  background-color: #bbb;
+}
+.inl{
+  display: inline-block;
+}
+#beat{
+  display: block;
+  margin-block: 8px;
+  margin-inline: 0px;
+  padding: 8px;
+  background-color: #000;
+}
+#beat span{
+  display: inline-block;
+  margin: 4px;
+  width: 36px;height: 36px;
+  background-color: #eee;color: #08f;
+  text-align: left;
+  vertical-align: middle;
+}
+#play{
+  margin-left: 0;
+  width: 52px;height: 52px;
+  text-align: center;
+  vertical-align: middle;
+  font: 24px sans-serif;
+  line-height: 1em;
+  border-radius: 50%;
+}
+#play:active{
+  
+}
+#bpm{
+  display: block;
+}
+#bpm input{
+  display: block;
+  margin-bottom: 16px;
+  padding: 0px;
+  width: 100%;
+}
+.plusbox button{
+  margin: 2px;padding: 8px 12px;
+  font: bold 1.2em monospace;
+}
+#compass{}
+.timesig{
+  padding: 6px;
+  border: none;
+  background-color: #111;color: #eee;
+  font: 1.2em sans-serif;
+}
+  </style>
+</head>
+<body>
+	<section>
+	  <div id="beat"><span>1</span><span>2</span><span>3</span><span>4</span></div>
+
+	  <button id="play">&#9654;</button>
+	  <div id="bpm">
+	    <h2 id="out-bpm" class="inl">120</h2><strong>bpm</strong>
+	    <div class="plusbox inl">
+	      <button onclick="plus(-1)">-</button>
+	      <button onclick="plus(1)">+</button>
+	    </div>
+	    <input id="in-bpm" type="range" min="20" value="120" max="250" step="1"/>
+	  </div>
+	  <div id="compass">
+	    <h3 class="inl">Compasso:</h3>
+	    <select class="timesig">
+	      <option value="2">2</option>
+	      <option value="3">3</option>
+	      <option selected value="4">4</option>
+	      <option value="5">5</option>
+	      <option value="6">6</option>
+	      <option value="7">7</option>
+	      <option value="8">8</option>
+	      <option value="9">9</option>
+	      <option value="10">10</option>
+	      <option value="11">11</option>
+	      <option value="12">12</option>
+	    </select>
+	    <span> / </span>
+	    <select class="timesig">
+	      <option value="2">2</option>
+	      <option selected value="4">4</option>
+	      <option value="8">8</option>
+	      <option value="16">16</option>
+	    </select>
+	  </div>
+	</section>
+	<script src="js/index.js"></script>
+</body>
+</html>

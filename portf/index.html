@@ -1,0 +1,126 @@
+<DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="loja,template,portfolio"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Prototipo Landing page</title>
+  </head>
+<body>
+<header>
+  <div>
+    <h1>Portfolio de Elementos</h1>
+    <p>Conheça este projeto que contém componentes interativos de um site</p>
+  </div>
+</header>
+<div id="bar">
+  <button onclick="showMenu()">
+    <span class="material-symbols-outlined" style="vertical-align:middle">menu</span>Menu</button>
+  <div id="menu">
+    <a>Sobre</a>
+    <a>Contato</a>
+    <a>Produtos</a>
+    <a>Novidades</a>
+  </div>
+</div>
+<section>
+  <p>Website demonstrando funcionalidades que podem estar presentes na sua página. Todo este código é nativo e tem objetivo ter a melhor performance.</p>
+</section>
+<section>
+  <div class="banner">
+    <img src="img/toni-lluch-JoRoy500nCc-unsplash.jpg" alt="nature 1">
+    <div>
+      <h3>Titulo</h3>
+      <p>Um banner com botão anunciando um produto</p>
+      <a href="#">Ver mais</a>
+    </div>
+  </div>
+  <div class="banner">
+    <img src="img/jay-antol-Xbf_4e7YDII-unsplash.jpg" alt="nature 1">
+    <div>
+      <h3>Titulo 2</h3>
+      <p>Um banner com botão anunciando outro produto</p>
+      <a href="#">Ver mais</a>
+    </div>
+  </div>
+</section>
+<section>
+  <!-- cards -->
+  <p class="desc">Esta sequencia de cards podem exibir uma imagem com link e descrição de um produto:</p>
+  <div class="cards">
+    <div>
+      <img src="img/erol-ahmed-d3pTF3r_hwY-unsplash.jpg" alt="imagem 1"/>
+      <h3>Product</h3>
+      <p>Description</p>
+      <a href="#">see</a>
+    </div>
+  </div>
+</section>
+<section>
+  <p>Uma galeria de imagens simples</p>
+  <div class="gallery">
+    <div>
+      <img src="img/taryn-kaahanui-J5b23iaAHis-unsplash.jpg" alt="imagem 1">
+      <img src="img/toni-lluch-JoRoy500nCc-unsplash.jpg" alt="imagem 2">
+    </div>
+    <div>
+       <img src="img/jay-antol-Xbf_4e7YDII-unsplash.jpg" alt="imagem 3">
+      <img src="img/ishan-seefromthesky-TobZaa8ZwI4-unsplash.jpg" alt="imagem 4">
+    </div>
+  </div>
+</section>
+<section>
+  <p>Uma sessão com efeitos visuais.</p>
+  <div>
+    <div class="s">
+      <span class="material-symbols-outlined">bolt</span><br/>
+      <strong>rápido</strong>
+    </div>
+    <div class="s">
+      <span class="material-symbols-outlined">responsive_layout</span><br/>
+      <strong>responsivo</strong>
+    </div>
+    <div class="s">
+      <span class="material-symbols-outlined">html</span><br/>
+      <strong>nativo</strong>
+    </div>
+  </div>
+</section>
+<section>
+  <div id="carousel">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</section>
+<section>
+  <h2>Buy your product</h2>
+  <form id="ctaform">
+    <label for="customer">Nome</label>
+    <input type="text" name="customer"/>
+    <label for="email">Email</label>
+    <input type="email" name="email"/>
+    <input id="sendbtn" type="submit"/>
+  </form>
+</section>
+<footer>
+  <p>Conteúdo de cabeçalho e redes sociais.</p>
+  <div id="social">
+    <a href="#">social 1</a>
+    <a href="#">social 2</a>
+    <a href="#">social 3</a>
+    <a href="#">social 4</a>
+  </div>
+  <a href="#home">voltar ao topo</a>
+</footer>
+</body>
+<script>
+const menu = document.getElementById('menu')
+function showMenu(){
+  menu.style.display = menu.style.display == 'block' ? 'none': 'block';
+}
+</script>
+</html>
