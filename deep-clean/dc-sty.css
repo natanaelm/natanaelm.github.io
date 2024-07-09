@@ -17,17 +17,21 @@
 @media screen and (prefers-color-scheme: dark) {
   :root{
     --cyan: #4f87b7;
-    --wth: #04204d;
-    --gray: #7bceff;
-    --light3: #264670;
+    --wth: #444;
+    --gray: #e2e2e2;
+    --light3: #0a121d;
     --dark1: #ceceda;
   }
   body{
-    background-color: #13172c;
+    background-color: #112;
     color: #eef;
   }
   .bl{
     color: #8089ca !important;
+  }
+  .prod div{
+    box-shadow: none !important;
+    border: 1px solid var(--wth);
   }
 }
 
