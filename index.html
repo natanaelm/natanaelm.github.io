@@ -19,17 +19,157 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="sty.css"/>
+  <style>
+:root{
+  --base: #f66b0e;
+  --wt: #efefef;
+  --light: #5bd3ab;
+  --light1: #88e0c3;
+  --blue: #112b3c;
+  --blue1: #205375;
+  --blue2: #00548b;
+}
+
+body{
+  margin:0;padding:0;
+  font-family: 'Nunito', sans-serif;
+}
+header{
+  padding: 48px 16px;
+  background-image: url('img/protruding-squares.svg');
+  background-size: contain;
+  color: var(--wt);
+}
+section{
+  padding: 16px;
+  line-height: 1.3em;
+  border-top: 2px solid var(--base);
+}
+h2{
+  margin-bottom: 8px;
+  color: var(--blue1);
+}
+h3{
+  color: var(--base);
+  margin-bottom: 0px;
+  line-height: 1em;
+}
+p{
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+a{
+  color: var(--blue2);
+  text-decoration: none;
+  transition: 150ms linear;
+}
+a:visited{color: var(--blue);}
+a:hover{
+  color: var(--base);
+  text-decoration: underline;
+}
+footer{
+  padding: 32px 16px;
+}
+
+.dk{
+  background-color: var(--blue);
+  color: var(--wt);
+}
+#higs{
+  background-image: url(img/tisbg.png);background-repeat: no-repeat;background-size: cover;padding: 32px 8px;
+  border-radius: 8px;
+  background-color: #444;
+}
+.qel{
+  display:flex;
+  padding-bottom: 16px;
+}
+.qel img{
+  width: 120px;
+  height: 120px;
+}
+.qel div{
+  padding-left: 16px;
+}
+
+.skl{
+  padding: 8px;
+  border-radius: 4px;
+  background-color: var(--blue);
+  color: var(--wt);
+  display: inline-block;
+}
+#que{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#soc{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: 4px;
+}
+#soc a{
+  padding: 10px;
+  background-color: var(--blue1);
+  color: var(--wt);
+}
+#soc a:hover{
+  background-color: var(--base);
+}
+
+@media (min-width: 540px){
+  header, footer{
+    padding-left: 24px;
+  }
+  section{
+    padding: 16px 24px;
+  }
+  #que{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #soc{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 960px) {
+  section{
+    margin: 0 16px;
+  }
+  #higs{
+    background-size: contain;
+  }
+  #soc{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1280px){
+  header, footer{
+    padding-left: 80px;
+  }
+  section{
+    margin: 0 64px;
+  }
+}
+  </style>
 
   <link rel="icon" href="img/n.png"/>
-</head><body>
+</head><body data-server-no-reload>
 <header>
   <h1>Natanael Maciel</h1>
-  <p>Desenvolvedor Web</p>
+  <p style="max-width: 480px">Meu portfólio de projetos pessoais</p>
 </header>
-
 <section>
   <h2>Projetos</h2>
+  <div id="higs">
+    <div style="padding: 8px;backdrop-filter: blur(4px);background-color: rgba(255,255,255,0.4);border-radius: 4px;max-width: 500px;">
+      <h3>TisProject</h3>
+      <p>Extração dos assets dos jogos The Sims J2ME, e talvez um remake escrito em TypeScript</p>
+    </div>
+  </div>
+  <p>Algumas páginas feitas para a Web</p>
   <div id="que">
     <div class="qel">
       <img src="deep-clean/img/icon.png" alt="Ícone"/>
@@ -43,8 +183,8 @@
       <img src="ActSom/img/logo.png" alt="onda de audio ciano"/>
       <div>
         <h3>ActSom</h3>
-        <p>Projeto para empresa de áudio</p>
-        <a href="ActSom/index.html">ver projeto</a>
+        <p>Projeto fictício para empresa de áudio</p>
+        <a href="ActSom/index.html">ver projeto &#10095;</a>
       </div>
     </div>
     <div>
@@ -62,13 +202,15 @@
     <span class="skl">HTML</span>
     <span class="skl">CSS</span>
     <span class="skl">JavaScript</span>
+    <span class="skl">TypeScript</span>
     <span class="skl">Python</span>
     <span class="skl">C/C++</span>
   </p>
   <p>Outras tecnologias que uso:</p>
   <p>
-    <span class="skl">NodeJS</span>
-    <span class="skl">Linux</span>
+    <span class="skl">Node JS</span>
+    <span class="skl">React JS</span>
+    <span class="skl">Express JS</span>
   </p>
 </section>
 
@@ -81,6 +223,6 @@
     <a href="https://github.com/natanaelm/natanaelm">GitHub</a>
   </div>
 </section>
-<script src="index.js"></script>
-<footer class="dk">2024 - Natanael Maciel</footer>
+<script></script>
+<footer class="dk">2025 - Desenvolvido por mim 😁</footer>
 </body></html>
