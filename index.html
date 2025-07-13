@@ -77,18 +77,6 @@ footer{
   color: var(--wt);
 }
 
-.qel{
-  display:flex;
-  padding-bottom: 16px;
-}
-.qel img{
-  width: 120px;
-  height: 120px;
-}
-.qel div{
-  padding-left: 16px;
-}
-
 .skl{
   padding: 8px;
   border-radius: 4px;
@@ -96,9 +84,20 @@ footer{
   color: var(--wt);
   display: inline-block;
 }
-#que{
+#projectbox{
   display: grid;
   grid-template-columns: 1fr;
+}
+#projectbox>div{
+  display:flex;
+  margin-bottom: 16px;
+}
+#projectbox>div img{
+  width: 120px;
+  height: 120px;
+}
+#projectbox>div div{
+  padding-left: 16px;
 }
 
 #soc{
@@ -122,7 +121,7 @@ footer{
   section{
     padding: 16px 24px;
   }
-  #que{
+  #projectbox{
     grid-template-columns: 1fr 1fr;
   }
 
@@ -155,11 +154,11 @@ footer{
   <h1>Natanael Maciel</h1>
   <p style="max-width: 480px">Meu portfólio de projetos pessoais</p>
 </header>
-<section>
+<section> 
   <h2>Projetos</h2>
   <p>Algumas páginas feitas para a Web</p>
-  <div id="que">
-    <div class="qel">
+  <div id="projectbox">
+    <div>
       <img src="deep-clean/img/icon.png" alt="Ícone"/>
       <div>
         <h3>DeepClean</h3>
@@ -167,17 +166,12 @@ footer{
         <a href="deep-clean/index.html">ver projeto &#10095;</a>
       </div>
     </div>
-    <div class="qel">
+    <div>
       <img src="ActSom/img/logo.png" alt="onda de audio ciano"/>
       <div>
         <h3>ActSom</h3>
         <p>Projeto fictício para empresa de áudio</p>
         <a href="ActSom/index.html">ver projeto &#10095;</a>
-      </div>
-    </div>
-    <div>
-      <div>
-        <h3></h3>
       </div>
     </div>
   </div>
