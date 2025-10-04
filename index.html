@@ -78,6 +78,7 @@ footer{
 }
 
 .skl{
+  margin-bottom: 4px;
   padding: 8px;
   border-radius: 4px;
   background-color: var(--blue);
@@ -100,20 +101,6 @@ footer{
   padding-left: 16px;
 }
 
-#soc{
-  display:grid;
-  grid-template-columns: 1fr;
-  gap: 4px;
-}
-#soc a{
-  padding: 10px;
-  background-color: var(--blue1);
-  color: var(--wt);
-}
-#soc a:hover{
-  background-color: var(--base);
-}
-
 @media (min-width: 540px){
   header, footer{
     padding-left: 24px;
@@ -125,18 +112,12 @@ footer{
     grid-template-columns: 1fr 1fr;
   }
 
-  #soc{
-    grid-template-columns: 1fr 1fr;
-  }
 }
 @media (min-width: 960px) {
   section{
     margin: 0 16px;
   }
 
-  #soc{
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
 @media (min-width: 1280px){
   header, footer{
@@ -180,7 +161,7 @@ footer{
 <section>
   <h2>Habilidades</h2>
   <p>Conheço as seguintes linguagens:</p>
-  <p>
+  <p >
     <span class="skl">HTML</span>
     <span class="skl">CSS</span>
     <span class="skl">JavaScript</span>
@@ -196,15 +177,6 @@ footer{
   </p>
 </section>
 
-<section>
-  <h2>Social</h2>
-  <div id="soc">
-    <a href="https://www.linkedin.com/in/natanael-maciel-82b006204">LinkedIn</a>
-    <a href="https://www.instagram.com/natanael.m.p">Instagram</a>
-    <a href="https://www.facebook.com/natanael.maciel.3950">Facebook</a>
-    <a href="https://github.com/natanaelm/natanaelm">GitHub</a>
-  </div>
-</section>
 <script></script>
 <footer class="dk">2025 - Desenvolvido por mim 😁</footer>
 </body></html>
